@@ -15,7 +15,7 @@ services:
       - "traefik.enable=true"
       - "traefik.docker.network=traefik-network"
 
-      - "traefik.http.routers.pma.rule=Host(`${SERVER_HOSTNAME}`)"
+      - "traefik.http.routers.pma.rule=Host(`${PHPMYADMIN_SERVER_HOSTNAME:?required}`)"
       - "traefik.http.routers.pma.entrypoints=websecure"
       - "traefik.http.routers.pma.tls.certresolver=le-cloudflare"
       - "traefik.http.routers.pma.service=pma"
