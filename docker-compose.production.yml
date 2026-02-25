@@ -1,6 +1,6 @@
 services:
   phpmyadmin:
-    image: phpmyadmin:5.2.1
+    image: phpmyadmin:${PHPMYADMIN_VERSION:?required}
     container_name: phpMyAdmin
     restart: unless-stopped
     env_file: .env
