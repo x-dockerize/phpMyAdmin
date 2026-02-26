@@ -60,10 +60,8 @@ set_env MYSQL_ROOT_PASSWORD        "$MYSQL_ROOT_PASSWORD"
 # --------------------------------------------------
 echo
 echo "==============================================="
-echo "✅ phpMyAdmin .env başarıyla hazırlandı"
+echo "✅ phpMyAdmin .env başarıyla hazırlandı!"
 echo "-----------------------------------------------"
-echo "🌐 Hostname        : $PHPMYADMIN_SERVER_HOSTNAME"
-echo "🗄️ MySQL Host      : $PMA_HOST"
-echo "🗄️ MySQL USER      : $PMA_USER"
+echo "🌐 Hostname      : https://$PHPMYADMIN_SERVER_HOSTNAME"
 echo "-----------------------------------------------"
 echo "==============================================="
