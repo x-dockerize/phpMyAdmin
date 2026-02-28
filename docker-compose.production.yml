@@ -16,8 +16,8 @@ services:
       - traefik.docker.network=traefik-network
 
       - traefik.http.routers.pma.rule=Host(`${PHPMYADMIN_SERVER_HOSTNAME:?required}`)
-      - traefik.http.routers.pma.entrypoints=websecure
-      - traefik.http.routers.pma.tls.certresolver=le-cloudflare
+      - traefik.http.routers.pma.entrypoints=https
+      - traefik.http.routers.pma.tls.certresolver=cloudflare
       - traefik.http.routers.pma.middlewares=trusted@file
       - traefik.http.routers.pma.service=pma
 
